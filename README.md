@@ -47,6 +47,11 @@ make -j16
 cd ../../bin/
 ./sample_mnist
 ```
+If you find the results like
+[]!pic1
+or
+[]!pic2
+That means you have successfully install the tensorrt
 
 ```
 git clone https://github.com/WongKinYiu/yolov7
