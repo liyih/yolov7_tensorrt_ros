@@ -12,7 +12,7 @@ yolov7 https://github.com/WongKinYiu/yolov7
 
 YOLOv7_Tensorrt https://github.com/Monday-Leo/YOLOv7_Tensorrt
 
-# Process
+# Installment of Tensorrt
 
 ```
 cd yolov7_tensorrt_ros
@@ -56,6 +56,32 @@ or
 ![](pic2.png)
 
 That means you have successfully install the tensorrt
+
+# Problem during installing
+## Problem1
+![](pic3.png)
+```
+sudo gedit /etc/ld.so.conf
+../TensorRT-8.4.1.5/lib
+sudo ldconfig
+```
+
+## Problem2
+![](pic4.png)
+```
+sudo ldconfig -v
+sudo ln -sf /usr/local/cuda/targets/x86_64-linux/lib/libcudnn.so.8.4.0
+/usr/local/cuda/targets/x86_64-linux/lib/libcudnn.so.8
+```
+## Problem3
+![](pic5.png)
+```
+sudo cp ../TensorRT-8.4.1.5/lib/libnvinfer_builder_resource.so.8.4.1
+/usr/lib
+```
+
+
+
 
 ```
 git clone https://github.com/WongKinYiu/yolov7
