@@ -48,9 +48,13 @@ cd ../../bin/
 ./sample_mnist
 ```
 If you find the results like
+
 ![](pic1.png)
+
 or
+
 ![](pic2.png)
+
 That means you have successfully install the tensorrt
 
 ```
