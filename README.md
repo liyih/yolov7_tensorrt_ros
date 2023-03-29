@@ -8,8 +8,11 @@ yolov7 https://github.com/WongKinYiu/yolov7
 
 YOLOv7_Tensorrt https://github.com/Monday-Leo/YOLOv7_Tensorrt
 
-#Preparation
-'''
+# Process
+
+```
+cd yolov7_tensorrt_ros
 git clone https://github.com/WongKinYiu/yolov7
 git clone https://github.com/Monday-Leo/YOLOv7_Tensorrt
-'''
+```
+
