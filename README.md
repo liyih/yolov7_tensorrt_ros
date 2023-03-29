@@ -28,6 +28,17 @@ Use the following instructions to make sure that you have correctly install CUDA
 NVCC -V
 cat /user/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 
 ```
+download the tensorrt
+click into https://developer.nvidia.com/nvidia-tensorrt-8x-download
+
+find the suitable version and download it.
+
+'''
+tar -xzvf TensorRT-8.4.1.5.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
+vim ~/.bashrc
+source ~/.bashrc
+'''
+
 
 ```
 git clone https://github.com/WongKinYiu/yolov7
