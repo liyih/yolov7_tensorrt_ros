@@ -79,11 +79,25 @@ sudo ln -sf /usr/local/cuda/targets/x86_64-linux/lib/libcudnn.so.8.4.0
 sudo cp ../TensorRT-8.4.1.5/lib/libnvinfer_builder_resource.so.8.4.1
 /usr/lib
 ```
-
-
-
-
+# Download the packages
 ```
 git clone https://github.com/WongKinYiu/yolov7
 git clone https://github.com/Monday-Leo/YOLOv7_Tensorrt
 ```
+Add YOLOv7_ EfficientNMS.py and export of Tensorrt warehouse_ Copy onnx. py to yolov7 and export it with Efficient NMS ONNX model (remember to install the conda environment before opening it.
+
+```
+python export_onnx.py --weights ./weights/yolov7.pt
+```
+If you don't have the pre-trained model of yolo, download at https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+and put it into ./weights
+
+
+
+
+
+
+
+
+
+
