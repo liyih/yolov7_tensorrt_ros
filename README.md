@@ -18,7 +18,7 @@ YOLOv7_Tensorrt https://github.com/Monday-Leo/YOLOv7_Tensorrt
 cd yolov7_tensorrt_ros
 ```
 
-create the conda environment
+Create the conda environment
 ```
 conda create -n name python=3.9
 pip install -r requirements.txt
@@ -28,17 +28,25 @@ Use the following instructions to make sure that you have correctly install CUDA
 NVCC -V
 cat /user/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2 
 ```
-download the tensorrt
-click into https://developer.nvidia.com/nvidia-tensorrt-8x-download
+Download the tensorrt
+Click into https://developer.nvidia.com/nvidia-tensorrt-8x-download
 
-find the suitable version and download it.
+Find the suitable version, download it and install it.
 
 ```
 tar -xzvf TensorRT-8.4.1.5.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
 vim ~/.bashrc
+put the following sentence at the bottom of the ./bashrc
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH：../TensorRT-8.4.1.5/lib
 source ~/.bashrc
 ```
-
+Run the samples to make sure that you have install the tensorrt successfully.
+```
+cd ../TensorRT-8.4.1.5/samples/sampleMNIST
+make -j16
+cd ../../bin/
+./sample_mnist
+```
 
 ```
 git clone https://github.com/WongKinYiu/yolov7
