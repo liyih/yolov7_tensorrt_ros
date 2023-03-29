@@ -37,7 +37,7 @@ find the suitable version and download it.
 tar -xzvf TensorRT-8.4.1.5.Linux.x86_64-gnu.cuda-11.6.cudnn8.4.tar.gz
 vim ~/.bashrc
 source ~/.bashrc
-'''
+```
 
 
 ```
