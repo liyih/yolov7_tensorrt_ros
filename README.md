@@ -90,10 +90,23 @@ Add YOLOv7_ EfficientNMS.py and export of Tensorrt warehouse_ Copy onnx. py to y
 python export_onnx.py --weights ./weights/yolov7.pt
 ```
 If you don't have the pre-trained model of yolo, download at https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
-and put it into ./weights
+and put it into ./weights(If you dont.t have please create one).
 
+Copy the converted onnx model to the Tensorrt/bin folder, and convert it to the onnx model of Efficient NMS Type. FP32 prediction deletion - fp16 parameter is sufficient.
 
+```
+trtexec --onnx=./yolov7.onnx --saveEngine=./yolov7_fp16.engine --fp16 --workspace=200
+```
+After waiting for the serialization model to be formed, modify YOLOv7_ Tensorrt warehouse infer.py model path and diagram path.
 
+```
+trt_engine = TRT_engine("./trt_model/yolov7_fp16.engine")
+img1 = cv2.imread("./pictures/zidane.jpg")
+```
+Run the test example
+```
+python infer.py
+```
 
 
 
