@@ -5,4 +5,11 @@ This project provides a detailed tutorial for how to use yolov7 in ROS. Please f
 # Acknowledge
 
 yolov7 https://github.com/WongKinYiu/yolov7
+
 YOLOv7_Tensorrt https://github.com/Monday-Leo/YOLOv7_Tensorrt
+
+#Preparation
+'''
+git clone https://github.com/WongKinYiu/yolov7
+git clone https://github.com/Monday-Leo/YOLOv7_Tensorrt
+'''
