@@ -4,7 +4,7 @@ This project provides a detailed tutorial for how to use yolov7 in ROS based on 
 
 Please find the Chinese user guide ./yolov7_tensorrt_ros/使用教程.pdf.
 
-
+The English user guide as follows:
 
 # Acknowledge
 
