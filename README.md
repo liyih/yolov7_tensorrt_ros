@@ -79,7 +79,7 @@ sudo ln -sf /usr/local/cuda/targets/x86_64-linux/lib/libcudnn.so.8.4.0
 sudo cp ../TensorRT-8.4.1.5/lib/libnvinfer_builder_resource.so.8.4.1
 /usr/lib
 ```
-# Download the packages
+# Yolov7
 ```
 git clone https://github.com/WongKinYiu/yolov7
 git clone https://github.com/Monday-Leo/YOLOv7_Tensorrt
@@ -107,6 +107,13 @@ Run the test example
 ```
 python infer.py
 ```
+![](pic6.png)
+# ROS
+```
+roslaunch kinect2_bridge kinect2_bridge.launch
+rosrun yolov7_tensorrt_ros yolo_intermediate.py
+```
+![](pic7.png)
 
 
 
