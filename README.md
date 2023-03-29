@@ -1,6 +1,10 @@
 # Yolov7_Tensorrt_ROS
 
-This project provides a detailed tutorial for how to use yolov7 in ROS. Please find the total user guide ./yolov7_tensorrt_ros/使用教程.pdf.
+This project provides a detailed tutorial for how to use yolov7 in ROS based on the acceleration of tensorrt. 
+
+Please find the Chinese user guide ./yolov7_tensorrt_ros/使用教程.pdf.
+
+
 
 # Acknowledge
 
